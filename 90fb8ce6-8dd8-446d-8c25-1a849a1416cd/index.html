@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101218">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>新しい仕事｜プロンプト全文コピー</title>
+<meta name="description" content="">
+<meta property="og:title" content="新しい仕事">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101218'/%3E%3Cpath d='M18 13h26v32H18z' fill='none' stroke='%23c5b4ff' stroke-width='5'/%3E%3Cpath d='M27 23h23v29H27z' fill='%23101218' stroke='%23c5b4ff' stroke-width='5'/%3E%3C/svg%3E">
+<style>:root{color-scheme:dark;--bg:#101218;--panel:#1a1d26;--text:#f4f4f7;--muted:#b4b6c5;--accent:#c5b4ff;--line:#363b4a;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-synthesis:none}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--text);font-size:1rem;line-height:1.8}button,textarea{font:inherit}button{touch-action:manipulation}button:focus-visible,summary:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #e6daff;outline-offset:4px}[hidden]{display:none!important}.page-shell{width:min(100% - 3rem,49rem);margin:auto;padding-bottom:max(2rem,env(safe-area-inset-bottom))}.site-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.5rem 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.wordmark{font-size:.875rem;font-weight:750;letter-spacing:.06em;display:inline-flex;gap:.5rem;align-items:center;min-width:0;overflow-wrap:anywhere}.brand-mark{color:var(--accent);font-size:1.7rem;line-height:1;font-weight:400}.edition{color:var(--muted);font-size:.875rem;overflow-wrap:anywhere}.intro{padding:2.3rem 0 1.8rem}h1{font-size:clamp(1.8rem,4.3vw,2.7rem);line-height:1.5;letter-spacing:-.025em;margin:0;font-weight:750;overflow-wrap:anywhere}.intro-text{color:var(--muted);margin:1rem 0 0;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere}.copy-panel{padding:1.3rem 1.5rem 1.1rem;border:1px solid #4b465e;border-radius:1rem;background:var(--panel)}.copy-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.4rem 1rem;margin-bottom:1rem;font-size:.875rem;color:var(--muted)}.copy-meta span:first-child{color:var(--text);font-weight:600}.copy-button{display:flex;justify-content:center;align-items:center;gap:.65rem;width:100%;min-height:3.8rem;border:0;border-radius:.6rem;padding:.85rem 1rem;background:var(--accent);color:#181025;cursor:pointer;font-size:1.0625rem;font-weight:750;line-height:1.55;overflow-wrap:anywhere}.copy-button:hover{background:#d4c7ff}.copy-button:disabled{cursor:default;opacity:.7}.copy-button[data-copied="true"]{background:#d1eab8}.copy-icon{width:1.4rem;height:1.4rem;flex:none}.copy-status{color:var(--muted);font-size:.875rem;line-height:1.75;margin:.9rem 0 0;min-height:1.6rem}.copy-status[data-state="success"]{color:#d1eab8}.copy-status[data-state="error"]{color:#f6d5a9}.how-to{margin-top:2.1rem}h2{margin:0 0 1rem;font-size:1rem;font-weight:650}.steps{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.steps li{display:flex;gap:.7rem;padding:0 1rem;border-left:1px solid var(--line);font-size:1rem;line-height:1.9;overflow-wrap:anywhere;min-width:0}.steps li:first-child{padding-left:0;border-left:0}.step-number{color:var(--accent);font-size:.875rem;font-variant-numeric:tabular-nums;flex:none}.prompt-reader{margin-top:2.2rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.prompt-reader summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:3.3rem;padding:1.1rem 0;cursor:pointer;list-style:none;font-size:1rem;font-weight:600}.prompt-reader summary::-webkit-details-marker{display:none}.expand-mark{font-size:1.3rem;color:var(--muted);font-weight:400}.prompt-reader[open] .expand-mark{transform:rotate(45deg)}pre{white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal;font:inherit;font-size:1rem;line-height:1.85;color:#d6d7e1;margin:0 0 1.5rem;padding:1.25rem;border-left:2px solid var(--accent);background:#151820;user-select:text;-webkit-user-select:text;tab-size:2}.manual-copy{border-top:1px solid var(--line);margin-top:1.2rem;padding-top:1rem}.manual-copy label{display:block;font-weight:600;font-size:1rem}.manual-copy p,.noscript{font-size:.875rem;color:var(--muted);line-height:1.8}.manual-copy textarea{display:block;width:100%;height:14rem;padding:1rem;font-size:1rem;line-height:1.75;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:.5rem;resize:vertical}.select-button{min-height:3rem;margin-top:.75rem;padding:.6rem 1rem;border:1px solid var(--line);border-radius:.5rem;color:var(--text);background:#292e3a;cursor:pointer}footer{color:var(--muted);font-size:.875rem;padding:1.6rem 0 0;line-height:1.85}.skip-link{position:absolute;left:1rem;top:-10rem;background:var(--accent);color:#181025;padding:.6rem 1rem;border-radius:.4rem;z-index:5}.skip-link:focus{top:.6rem}
+@media(max-width:600px){.page-shell{width:calc(100% - 2.25rem)}.site-header{padding:1.1rem 0;gap:.6rem}.wordmark{letter-spacing:.035em;gap:.35rem}.intro{padding:1.7rem 0 1.4rem}.intro-text{margin-top:.85rem}.copy-panel{padding:1rem;border-radius:.85rem}.copy-button{font-size:1rem;padding:.85rem .5rem;min-height:3.5rem}.how-to{margin-top:1.7rem}.steps{display:flex;flex-direction:column;gap:.75rem}.steps li,.steps li:first-child{border:0;padding:0;gap:.85rem}.prompt-reader{margin-top:1.7rem}pre{padding:.8rem}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#copyButton">全文コピーボタンへ</a>
+<div class="page-shell">
+<header class="site-header"><span class="wordmark"><span class="brand-mark" aria-hidden="true">/</span> PROMPT COLLECTION</span></header>
+<main>
+<section class="intro" aria-labelledby="pageTitle"><h1 id="pageTitle">新しい仕事</h1></section>
+<section class="copy-panel" aria-label="プロンプトをコピー">
+<div class="copy-meta"><span>プロンプト全文</span><span>8,794文字・省略なし</span></div>
+<button id="copyButton" class="copy-button" type="button" disabled aria-describedby="copyStatus"><svg class="copy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3"/></svg><span id="copyLabel">プロンプト全文をコピー</span></button>
+<p id="copyStatus" class="copy-status" role="status" aria-live="polite" aria-atomic="true">説明文を含めず、プロンプトだけをコピーします。</p>
+<div id="manualCopy" class="manual-copy" hidden><label for="manualText">手動コピー用の全文</label><p>「全文を選択」を押し、長押しメニューの「コピー」を選んでください。PCはCtrl+C（Macは⌘C）でコピーできます。アプリ内でうまくいかない場合は、SafariやChromeでこのページを開いてください。</p><textarea id="manualText" readonly spellcheck="false"></textarea><button id="selectButton" class="select-button" type="button">全文を選択</button></div>
+<noscript><p class="noscript">JavaScriptが無効です。下の「全文を確認する」を開き、本文を選択してコピーしてください。</p></noscript>
+</section>
+<section class="how-to" aria-labelledby="howToTitle"><h2 id="howToTitle">使い方</h2><ol class="steps"><li><span class="step-number" aria-hidden="true">01</span><span>プロンプトをコピー</span></li><li><span class="step-number" aria-hidden="true">02</span><span>使いたいAIを開く</span></li><li><span class="step-number" aria-hidden="true">03</span><span>プロンプトを貼り付けて送信</span></li></ol></section>
+<details class="prompt-reader"><summary><span>全文を確認する</span><span class="expand-mark" aria-hidden="true">＋</span></summary><pre id="promptText"><span># PERSON-ONLY IMPOSSIBLE JOB
+## 過去会話から「存在しない仕事」を診断し、その人物だけの職業キービジュアルを制作する
+
+あなたは、
+
+・人物分析
+・行動パターン分析
+・職業コンセプト設計
+・世界観構築
+・キャラクターデザイン
+・SF
+・ファンタジー
+・シュルレアリスム
+・未来技術
+・象徴表現
+・映画的構図
+・ゲームキービジュアル
+・アートディレクション
+
+を専門とするクリエイターです。
+
+今回の目的は、
+
+「これまでのユーザーとChatGPTの会話全体から、その人物の興味・欲求・行動パターン・価値観・得意分野・執着・創作傾向を分析し、その人物が別世界に存在していた場合に就いていそうな“現実には存在しない仕事”を発明し、その仕事を1枚の完成されたキービジュアルとして表現すること」
+
+です。
+
+ただし、この企画で最も重要なのは、
+
+【人物が変われば、仕事内容そのものが大きく変わること】
+
+です。
+
+単に職業名だけを変えてはいけません。
+
+Aという人物なら「失われた生物を飼育する仕事」、
+Bという人物なら「都市に発生した不要な音を回収する仕事」、
+Cという人物なら「巨大生物の体内へ荷物を届ける仕事」
+
+というほど、
+
+【仕事内容・作業・道具・職場・世界観まで明確に違う】
+
+結果を目指してください。
+
+既存の職業を少し未来風にしただけのものにはしないでください。
+
+「AIクリエイター」
+「投資家」
+「デザイナー」
+「研究者」
+「エンジニア」
+「魔法使い」
+
+など、すでに名前のある職業へ単純に分類することは禁止します。
+
+重要なのは、
+
+【この人物の性格や行動だからこそ、この世界に新しい職業が必要になった】
+
+と思える仕事を発明することです。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 1｜過去会話から人物を分析
+━━━━━━━━━━━━━━━━━━
+
+まず、これまでの会話全体を分析してください。
+
+単純に、
+
+「ゲームが好き」
+「AIに興味がある」
+「旅行が好き」
+「絵を作っている」
+
+といった趣味の一覧を作るだけでは不十分です。
+
+以下を重点的に観察してください。
+
+・何について頻繁に質問しているか
+・何を作ろうとしているか
+・どんなものに強く興味を持つか
+・一度始めたものをどこまで改善するか
+・完成したものに何を求めるか
+・新しい技術をどう扱うか
+・知識を集めるタイプか、作品を作るタイプか
+・何を比較することが多いか
+・何を保存しようとするか
+・何を捨てようとするか
+・何を繰り返し修正するか
+・失敗したとき、最初にどこを直そうとするか
+・新しいものを見つけたとき、最初に何をするか
+・途中で満足するか、さらに改善しようとするか
+・一つを深掘りするか、多数を横断するか
+・自分でゼロから作るか、既存物を改造するか
+・正確さと意外性のどちらを重視するか
+・収集、創造、分析、破壊、修復、管理、探索など、どの行動が多いか
+・どんな世界観や表現を好むか
+・複数の分野をどのようにつなげているか
+・本人が無意識に繰り返している行動は何か
+・「違う」と感じたとき何に反応しているか
+・「もっと欲しい」と感じる対象は何か
+・最終的に何を手に入れようとしているのか
+
+表面的な趣味ではなく、
+
+【その人物が何度も繰り返している行動の構造】
+
+を発見してください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 2｜人物を「3つの動詞」へ圧縮
+━━━━━━━━━━━━━━━━━━
+
+人物分析の結果から、
+
+【その人物を最もよく表す3つの動詞】
+
+を抽出してください。
+
+例えば、
+
+「集める × 接続する × 増殖させる」
+
+「観察する × 分解する × 修復する」
+
+「比較する × 選別する × 圧縮する」
+
+「疑う × 試す × 更新する」
+
+「保存する × 再現する × 変形する」
+
+などです。
+
+ただし、これは例です。
+
+例文をそのまま使用せず、
+必ず実際の過去会話から導いてください。
+
+重要なのは名詞ではなく、
+
+【その人物が何をしている人なのか】
+
+を動詞として捉えることです。
+
+そして、
+
+この3つの動詞を同時に必要とする仕事を考えてください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 3｜職業カテゴリを分岐させる
+━━━━━━━━━━━━━━━━━━
+
+職業名を考える前に、
+
+この人物の行動が最も強く属する
+「仕事の基本行為」を内部で判定してください。
+
+候補には例えば、
+
+・収集
+・加工
+・修復
+・探索
+・選別
+・飼育
+・運搬
+・交渉
+・除去
+・監視
+・保存
+・変換
+・接続
+・解体
+・培養
+・測定
+・捕獲
+・交換
+・建造
+・分類
+・封印
+・発掘
+・解読
+・移植
+・複製
+・圧縮
+・拡張
+・調教
+・清掃
+・料理
+・採取
+・航行
+・救助
+
+などがあります。
+
+このリストに限定されません。
+
+人物分析から、より適切な行為カテゴリを新しく作っても構いません。
+
+重要なのは、
+
+「創造型」
+
+のような広すぎる分類へ逃げないことです。
+
+必ず、
+
+【実際に手を動かして何をする仕事なのか】
+
+が想像できるカテゴリを選択してください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 4｜職業案を最低3つ内部生成
+━━━━━━━━━━━━━━━━━━
+
+いきなり最終職業を決めないでください。
+
+人物分析と3つの動詞を使って、
+
+【仕事内容が互いに大きく異なる架空職業】
+
+を最低3案、内部で作ってください。
+
+重要なのは、
+
+名前だけ違う3案ではなく、
+
+「扱う対象」
+「作業方法」
+「社会的役割」
+「仕事場」
+「危険」
+「完成物」
+
+まで異なる3案にすることです。
+
+例えば、
+
+案Aが何かを保存する仕事なら、
+案Bは何かを捕獲する仕事、
+案Cは何かを育てる仕事、
+
+というくらい距離を取ってください。
+
+その3案を比較し、
+
+【過去会話に存在する複数の具体的な行動を最も同時に説明できる職業】
+
+を1つだけ採用してください。
+
+単純に最も格好いい職業を選んではいけません。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 5｜「その人にしか成立しないか」テスト
+━━━━━━━━━━━━━━━━━━
+
+採用候補を決めたら、内部で次のテストをしてください。
+
+その職業を別の創作好きな人物へ渡したとき、
+
+「この人にも普通に当てはまりそう」
+
+と感じる場合は不採用です。
+
+また、
+
+「好奇心旺盛な人」
+「クリエイティブな人」
+「新しいものが好きな人」
+
+程度の説明だけで成立してしまう職業も不採用です。
+
+最低でも、
+
+【その人物の異なる3つ以上の具体的行動】
+
+が同時に存在するからこそ成立する仕事にしてください。
+
+理想は、
+
+「この人物が存在したから、この社会がこの仕事を作った」
+
+と思えるレベルです。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 6｜抽象概念への逃避を禁止
+━━━━━━━━━━━━━━━━━━
+
+架空職業を考えるとき、
+
+便利な抽象概念へ安易に逃げないでください。
+
+特に、
+
+・世界線
+・夢
+・可能性
+・未来
+・運命
+・記憶
+・時間
+・異世界
+・アイデア
+・創造そのもの
+・現実そのもの
+
+を仕事の中心対象にすることは、
+
+人物分析から極めて強い必然性がない限り禁止します。
+
+また、
+
+「世界を書き換える」
+「未来を選択する」
+「可能性を集める」
+「夢を編集する」
+「記憶を修復する」
+
+のような、
+
+誰にでもそれらしく見えてしまう仕事内容は禁止します。
+
+できる限り、
+
+【具体的な物体・生物・現象・場所・社会システム】
+
+を仕事の対象にしてください。
+
+抽象概念を使用する場合でも、
+必ず具体的な作業へ変換してください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 7｜職業名は最後に決める
+━━━━━━━━━━━━━━━━━━
+
+最初に格好いい職業名を考えて、
+そこから仕事内容を逆算してはいけません。
+
+必ず、
+
+人物分析
+↓
+3つの動詞
+↓
+行為カテゴリ
+↓
+扱う対象
+↓
+異常な作業
+↓
+社会的役割
+↓
+仕事場
+↓
+専門道具
+↓
+職業名
+
+の順番で設計してください。
+
+また、
+
+「○○編集者」
+「○○調律師」
+「○○設計士」
+「○○研究者」
+「○○管理者」
+「○○魔導士」
+
+のような汎用的な名称へ安易に逃げないでください。
+
+仕事内容そのものから生まれた、
+完全オリジナルの職業名にしてください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 8｜仕事の仕組みを設計
+━━━━━━━━━━━━━━━━━━
+
+次の項目を内部で設定してください。
+
+・職業名
+・仕事内容
+・この仕事が存在する世界
+・何を扱う仕事なのか
+・なぜ社会に必要なのか
+・仕事によって生み出されるもの
+・仕事によって失われるもの
+・仕事に必要な特殊能力
+・仕事道具
+・仕事場
+・制服／作業服
+・仕事上の危険
+・失敗すると何が起きるか
+・社会からどのように見られているか
+・この人物がこの仕事を続ける理由
+
+重要なのは、
+
+「設定として面白い」
+
+だけではありません。
+
+【仕事をしている場面を見ただけで、何をしている人なのか想像できる】
+
+仕事にしてください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 9｜本人の興味を直接描かない
+━━━━━━━━━━━━━━━━━━
+
+過去会話に、
+
+ゲーム、
+AI、
+投資、
+映像、
+音楽、
+キャラクター、
+プログラミング、
+旅行、
+ファッション、
+料理、
+スポーツ、
+乗り物、
+動物
+
+などが登場したとしても、
+
+それらをそのまま画面へ並べることは禁止します。
+
+例えば、
+
+「投資が好きだからチャート」
+「AIが好きだからロボット」
+「ゲームが好きだからゲーム機」
+「音楽が好きだから楽器」
+
+という変換は禁止です。
+
+代わりに、
+
+【なぜその人物は、それに惹かれているのか】
+
+を分析してください。
+
+興味の対象ではなく、
+
+その対象へ向かわせている
+
+【行動原理】
+
+を架空世界の仕事へ変換してください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 10｜この仕事だけの「異常な作業」
+━━━━━━━━━━━━━━━━━━
+
+この職業には、
+
+現実世界では絶対に存在しない、
+象徴的な作業を1つ設定してください。
+
+ただし、
+
+「壊れた未来を取り出す」
+「アイデアを結晶化する」
+「夢を瓶に入れる」
+
+のように、
+
+抽象概念を単純に物体化するだけでは不十分です。
+
+過去会話でその人物が繰り返している
+
+【行動の癖】
+
+そのものを、
+
+別世界の物理法則へ翻訳してください。
+
+例えば、
+
+現実世界で
+
+観察
+↓
+比較
+↓
+違和感を発見
+↓
+局所修正
+↓
+再比較
+
+を繰り返す人物なら、
+
+その反復構造そのものが
+仕事の異常な作業になるよう設計してください。
+
+元の趣味は見えなくても、
+
+【その人物の行動パターンだけは明確に残っている】
+
+状態を目指してください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 11｜職業専用の道具
+━━━━━━━━━━━━━━━━━━
+
+一般的な、
+
+剣
+銃
+杖
+PC
+スマートフォン
+
+だけで終わらせないでください。
+
+仕事内容から逆算して、
+
+【その職業にしか存在しない専門道具】
+
+を最低1つ設計してください。
+
+道具には、
+
+・何を測るのか
+・何を掴むのか
+・何を切るのか
+・何を保存するのか
+・何を変換するのか
+・なぜその形なのか
+・長年使用した痕跡
+
+などを持たせます。
+
+必要なら、
+
+機械、
+生物、
+液体、
+光、
+人工知能、
+未知物質、
+重力、
+音、
+匂い、
+確率、
+温度、
+影、
+植物、
+菌類、
+空間そのもの
+
+なども道具として扱って構いません。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 12｜仕事場
+━━━━━━━━━━━━━━━━━━
+
+普通のオフィスにはしないでください。
+
+仕事内容そのものが、
+空間の構造を決めている職場にしてください。
+
+「格好いい場所だから選ぶ」
+
+のではなく、
+
+【この仕事を効率的に行おうとした結果、この空間になった】
+
+と説明できる場所にしてください。
+
+巨大でも小さくても構いません。
+
+屋内である必要もありません。
+
+移動し続ける職場でも、
+生きている職場でも、
+崩壊し続ける職場でも構いません。
+
+仕事内容と空間構造を必ず結びつけてください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 13｜人物デザイン
+━━━━━━━━━━━━━━━━━━
+
+人物は、
+
+「その仕事を何年も続けているプロ」
+
+として描いてください。
+
+コスプレのような新品の衣装は禁止です。
+
+・仕事によって擦れた部分
+・何度も補修された部分
+・特殊素材
+・専用ポケット
+・工具の装着位置
+・作業による汚れ
+・傷
+・変色
+・発光
+・職業病のような身体的変化
+
+などを仕事内容から逆算してください。
+
+衣装を見るだけでも、
+
+「この人物は何をする人なのか」
+
+が少し推測できるデザインにします。
+
+表情は派手に叫ばせず、
+
+仕事へ集中している
+自然な瞬間を優先してください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 14｜映画のワンシーンとして構成
+━━━━━━━━━━━━━━━━━━
+
+証明写真のような直立ポーズは禁止です。
+
+人物が、
+
+【その職業で最も特徴的な作業を実際に行っている瞬間】
+
+を描いてください。
+
+カメラは少し離れた位置から撮影し、
+
+人物だけでなく、
+仕事内容と仕事場まで理解できる構図にしてください。
+
+基本構造は、
+
+前景：
+専門道具、作業途中の対象、仕事の痕跡
+
+中景：
+実際に作業している人物
+
+背景：
+なぜこの仕事が必要なのか分かる世界
+
+とします。
+
+ただし仕事内容に適した場合は、
+この構成自体を変更して構いません。
+
+映画の一場面、
+AAAゲームのコンセプトアート、
+最高品質のキービジュアルのような完成度を目指してください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 15｜一つだけ説明不能なもの
+━━━━━━━━━━━━━━━━━━
+
+画面のどこかに、
+
+仕事内容を理解してもなお説明できない
+
+【一つだけ不可解な存在・現象】
+
+を配置してください。
+
+ただし、
+
+巨大なクジラ、
+浮遊都市、
+黒い球体、
+巨大な目、
+
+などの定番表現へ毎回逃げないでください。
+
+今回の職業と世界から、
+独自の不可解なものを考えてください。
+
+それについて説明文で正体を明かしてはいけません。
+
+見る人が、
+
+「仕事道具なのか？」
+「事故なのか？」
+「生物なのか？」
+「この人物だけに見えているのか？」
+
+と考えられる余白を残してください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 16｜ビジュアル類似化防止
+━━━━━━━━━━━━━━━━━━
+
+過去に生成した架空職業キービジュアルが存在する場合、
+
+そのビジュアル構成まで似せてはいけません。
+
+特に以下が連続して使用されないようにしてください。
+
+・机に座って作業する人物
+・大量のモニター
+・空中ディスプレイ
+・浮遊都市
+・巨大都市を見下ろす構図
+・ガラス球の中の世界
+・瓶に何かを保存する表現
+・巨大生物が空を泳ぐ構図
+・青＋紫＋金色中心の配色
+・人物中央＋背景巨大世界という固定構図
+
+人物分析の結果から、
+
+「立つ」
+「走る」
+「潜る」
+「登る」
+「這う」
+「吊られる」
+「運ぶ」
+「捕まえる」
+「解体する」
+「縫う」
+「洗う」
+「削る」
+「掘る」
+「育てる」
+「追跡する」
+「料理する」
+「投げる」
+「組み立てる」
+
+など、
+
+仕事内容に適した身体動作を選んでください。
+
+職業が違えば、
+
+【シルエット・ポーズ・カメラ位置・場所・色・光・スケール感】
+
+まで変化させてください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 17｜最終類似度チェック
+━━━━━━━━━━━━━━━━━━
+
+画像生成前に、内部で最後のチェックを行ってください。
+
+今回の職業を、
+
+「世界」
+「夢」
+「未来」
+「可能性」
+「記憶」
+
+という単語へ置き換えても成立してしまう場合、
+職業設定が抽象的すぎます。
+
+作り直してください。
+
+また、
+
+職業名を隠してキービジュアルだけを見た場合に、
+
+別の人物向けに生成した架空職業と
+ほぼ同じ仕事内容に見える場合も作り直してください。
+
+次の7項目のうち最低5項目は、
+他の人物と明確に異なる必要があります。
+
+・扱う対象
+・基本動作
+・専門道具
+・仕事場
+・危険
+・身体動作
+・画面構成
+
+さらに、
+
+「なぜこの人物なのか？」
+
+への答えが、
+過去会話の具体的な行動パターンから説明できることを確認してください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 18｜出力
+━━━━━━━━━━━━━━━━━━
+
+最初に短く、
+
+【人物分析】
+その人物の表面的な趣味ではなく、
+繰り返している行動原理を3〜5行程度で説明。
+
+【その人物を表す3つの動詞】
+「○○する × ○○する × ○○する」
+
+【職業カテゴリ】
+この仕事の基本行為。
+
+【架空職業名】
+完全オリジナルの名称。
+
+【仕事内容】
+何を対象として、具体的に何をする仕事なのか。
+
+【この人物だから成立した理由】
+過去会話の複数の行動パターンと仕事内容の関係。
+
+【象徴的な異常作業】
+この職業で最も象徴的な、現実には存在しない作業。
+
+【専用道具】
+その職業でしか使わない道具。
+
+【仕事場】
+なぜその構造になったのか分かる職場。
+
+【仕事によって生み出されるもの】
+作業の結果、社会へ何が残るのか。
+
+【仕事によって失われるもの】
+この仕事を行う代償。
+
+【仕事上の危険】
+失敗した場合に何が起きるのか。
+
+【説明不能なもの】
+存在だけ簡潔に示してください。
+正体や意味は説明しないでください。
+
+を提示してください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ STEP 19｜最終キービジュアル生成
+━━━━━━━━━━━━━━━━━━
+
+上記の文章出力が完了したら、
+その設定をすべて統合した
+
+【1枚の完成された職業キービジュアル】
+
+を生成してください。
+
+設定資料集は禁止です。
+
+複数パネルは禁止です。
+
+キャラクター三面図は禁止です。
+
+道具一覧は禁止です。
+
+説明文を大量に配置したインフォグラフィックは禁止です。
+
+文字中心のポスターは禁止です。
+
+職業名などの文字情報は、
+作品として必要な場合のみ最小限にしてください。
+
+基本的には、
+
+【説明を読まなくても、絵そのものから仕事を想像できる】
+
+ことを優先してください。
+
+人物は実際に仕事をしています。
+
+仕事道具も使用中です。
+
+作業対象にも変化が起きています。
+
+背景にもその仕事が必要な理由が存在します。
+
+つまり、
+
+「人物＋格好いい背景」
+
+ではなく、
+
+【仕事という出来事そのもの】
+
+を1枚の絵にしてください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ 最重要｜人物ごとの差を最大化する
+━━━━━━━━━━━━━━━━━━
+
+この企画のゴールは、
+
+「この人に向いている現実の仕事を診断すること」
+
+ではありません。
+
+また、
+
+「その人物を格好いいファンタジー職業にすること」
+
+だけでもありません。
+
+目標は、
+
+【この人物の人生に繰り返し現れている行動を、
+別世界の社会が必要とする労働へ変換すること】
+
+です。
+
+したがって、
+
+人物Aと人物Bの性格が違うなら、
+
+単に、
+
+人物A＝世界線調律師
+人物B＝夢境編集者
+
+のように、
+名詞だけ変わった似た仕事を作ってはいけません。
+
+仕事内容そのものを変えてください。
+
+例えば、
+
+一人は巨大生物の脱皮殻から都市素材を切り出している。
+
+一人は夜明け前だけ地面から発生する音を捕獲している。
+
+一人は絶滅した植物を別生物の体内で育てている。
+
+一人は建物に寄生した未知の構造物を外科手術のように除去している。
+
+一人は海底へ沈んだ言語を発掘している。
+
+というほど、
+
+【何をしているのかが根本から違う】
+
+結果を目指してください。
+
+ただし、これらも発想例です。
+そのまま採用しないでください。
+
+
+━━━━━━━━━━━━━━━━━━
+■ 最終原則
+━━━━━━━━━━━━━━━━━━
+
+職業から人物を作るのではありません。
+
+人物から行動を抽出し、
+
+行動から作業を作り、
+
+作業から対象を決め、
+
+対象から道具を作り、
+
+道具から仕事場を作り、
+
+仕事場から世界を作り、
+
+最後に職業名を与えてください。
+
+順番は必ず、
+
+人物
+↓
+行動
+↓
+作業
+↓
+対象
+↓
+道具
+↓
+職場
+↓
+社会
+↓
+職業
+
+です。
+
+そして最終作品は、
+
+「この人は何者なのか？」
+
+ではなく、
+
+【もし、この人物特有の生き方そのものが、
+別世界で社会に必要とされる仕事になったら？】
+
+への答えとなる1枚にしてください。</span></pre></details>
+</main>
+<footer>このページはプロンプトの配布用です。生成や回答は、お使いのAIで行ってください。</footer>
+</div>
+<script>async function copyPlainText(text) {
+    try {
+      if (globalThis.isSecureContext && navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+    } catch (_) { /* Some local files and embedded browsers restrict this API. */ }
+    const previous = document.activeElement;
+    const field = document.createElement("textarea");
+    field.value = text;
+    field.readOnly = true;
+    field.setAttribute("aria-label","全文コピー用の一時欄");
+    field.style.cssText = "position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;font-size:16px";
+    document.body.appendChild(field);
+    let success = false;
+    try {
+      field.focus({preventScroll:true});
+      field.select();
+      field.setSelectionRange(0,field.value.length);
+      success = typeof document.execCommand === "function" && document.execCommand("copy") === true;
+    } catch (_) { success = false; }
+    finally { field.remove(); previous?.focus?.({preventScroll:true}); }
+    return success;
+  }
+(function distributionRuntime() {
+    const source = document.getElementById("promptText");
+    const button = document.getElementById("copyButton");
+    const label = document.getElementById("copyLabel");
+    const status = document.getElementById("copyStatus");
+    const manual = document.getElementById("manualCopy");
+    const field = document.getElementById("manualText");
+    const original = source.textContent;
+    const selectAll = () => {field.focus({preventScroll:true});field.select();field.setSelectionRange(0,field.value.length);};
+    button.disabled = false;
+    button.addEventListener("click",async () => {
+      if (button.disabled) return;
+      button.disabled = true;
+      button.dataset.copied = "false";
+      label.textContent = "コピー中…";
+      const success = await copyPlainText(original);
+      button.disabled = false;
+      if (success) {
+        label.textContent = "全文をコピーしました";
+        button.dataset.copied = "true";
+        status.dataset.state = "success";
+        status.textContent = "使いたいAIに貼り付けてください。";
+        manual.hidden = true;
+      } else {
+        label.textContent = "プロンプト全文をコピー";
+        status.dataset.state = "error";
+        status.textContent = "自動コピーが制限されています。下の欄からコピーしてください。";
+        field.value = original;
+        manual.hidden = false;
+        selectAll();
+      }
+    });
+    document.getElementById("selectButton").addEventListener("click",() => {
+      selectAll();
+      status.dataset.state = "error";
+      status.textContent = "全文を選択しました。長押しメニューの「コピー」、またはCtrl+C（Macは⌘C）でコピーしてください。";
+    });
+  })();</script>
+</body>
+</html>
