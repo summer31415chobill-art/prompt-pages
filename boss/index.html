@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101218">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>迷宮のボス創造｜プロンプト全文コピー</title>
+<meta name="description" content="">
+<meta property="og:title" content="迷宮のボス創造">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101218'/%3E%3Cpath d='M18 13h26v32H18z' fill='none' stroke='%23c5b4ff' stroke-width='5'/%3E%3Cpath d='M27 23h23v29H27z' fill='%23101218' stroke='%23c5b4ff' stroke-width='5'/%3E%3C/svg%3E">
+<style>:root{color-scheme:dark;--bg:#101218;--panel:#1a1d26;--text:#f4f4f7;--muted:#b4b6c5;--accent:#c5b4ff;--line:#363b4a;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-synthesis:none}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--text);font-size:1rem;line-height:1.8}button,textarea{font:inherit}button{touch-action:manipulation}button:focus-visible,summary:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #e6daff;outline-offset:4px}[hidden]{display:none!important}.page-shell{width:min(100% - 3rem,49rem);margin:auto;padding-bottom:max(2rem,env(safe-area-inset-bottom))}.site-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.5rem 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.wordmark{font-size:.875rem;font-weight:750;letter-spacing:.06em;display:inline-flex;gap:.5rem;align-items:center;min-width:0;overflow-wrap:anywhere}.brand-mark{color:var(--accent);font-size:1.7rem;line-height:1;font-weight:400}.edition{color:var(--muted);font-size:.875rem;overflow-wrap:anywhere}.intro{padding:2.3rem 0 1.8rem}h1{font-size:clamp(1.8rem,4.3vw,2.7rem);line-height:1.5;letter-spacing:-.025em;margin:0;font-weight:750;overflow-wrap:anywhere}.intro-text{color:var(--muted);margin:1rem 0 0;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere}.copy-panel{padding:1.3rem 1.5rem 1.1rem;border:1px solid #4b465e;border-radius:1rem;background:var(--panel)}.copy-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.4rem 1rem;margin-bottom:1rem;font-size:.875rem;color:var(--muted)}.copy-meta span:first-child{color:var(--text);font-weight:600}.copy-button{display:flex;justify-content:center;align-items:center;gap:.65rem;width:100%;min-height:3.8rem;border:0;border-radius:.6rem;padding:.85rem 1rem;background:var(--accent);color:#181025;cursor:pointer;font-size:1.0625rem;font-weight:750;line-height:1.55;overflow-wrap:anywhere}.copy-button:hover{background:#d4c7ff}.copy-button:disabled{cursor:default;opacity:.7}.copy-button[data-copied="true"]{background:#d1eab8}.copy-icon{width:1.4rem;height:1.4rem;flex:none}.copy-status{color:var(--muted);font-size:.875rem;line-height:1.75;margin:.9rem 0 0;min-height:1.6rem}.copy-status[data-state="success"]{color:#d1eab8}.copy-status[data-state="error"]{color:#f6d5a9}.how-to{margin-top:2.1rem}h2{margin:0 0 1rem;font-size:1rem;font-weight:650}.steps{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.steps li{display:flex;gap:.7rem;padding:0 1rem;border-left:1px solid var(--line);font-size:1rem;line-height:1.9;overflow-wrap:anywhere;min-width:0}.steps li:first-child{padding-left:0;border-left:0}.step-number{color:var(--accent);font-size:.875rem;font-variant-numeric:tabular-nums;flex:none}.prompt-reader{margin-top:2.2rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.prompt-reader summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:3.3rem;padding:1.1rem 0;cursor:pointer;list-style:none;font-size:1rem;font-weight:600}.prompt-reader summary::-webkit-details-marker{display:none}.expand-mark{font-size:1.3rem;color:var(--muted);font-weight:400}.prompt-reader[open] .expand-mark{transform:rotate(45deg)}pre{white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal;font:inherit;font-size:1rem;line-height:1.85;color:#d6d7e1;margin:0 0 1.5rem;padding:1.25rem;border-left:2px solid var(--accent);background:#151820;user-select:text;-webkit-user-select:text;tab-size:2}.manual-copy{border-top:1px solid var(--line);margin-top:1.2rem;padding-top:1rem}.manual-copy label{display:block;font-weight:600;font-size:1rem}.manual-copy p,.noscript{font-size:.875rem;color:var(--muted);line-height:1.8}.manual-copy textarea{display:block;width:100%;height:14rem;padding:1rem;font-size:1rem;line-height:1.75;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:.5rem;resize:vertical}.select-button{min-height:3rem;margin-top:.75rem;padding:.6rem 1rem;border:1px solid var(--line);border-radius:.5rem;color:var(--text);background:#292e3a;cursor:pointer}footer{color:var(--muted);font-size:.875rem;padding:1.6rem 0 0;line-height:1.85}.skip-link{position:absolute;left:1rem;top:-10rem;background:var(--accent);color:#181025;padding:.6rem 1rem;border-radius:.4rem;z-index:5}.skip-link:focus{top:.6rem}
+@media(max-width:600px){.page-shell{width:calc(100% - 2.25rem)}.site-header{padding:1.1rem 0;gap:.6rem}.wordmark{letter-spacing:.035em;gap:.35rem}.intro{padding:1.7rem 0 1.4rem}.intro-text{margin-top:.85rem}.copy-panel{padding:1rem;border-radius:.85rem}.copy-button{font-size:1rem;padding:.85rem .5rem;min-height:3.5rem}.how-to{margin-top:1.7rem}.steps{display:flex;flex-direction:column;gap:.75rem}.steps li,.steps li:first-child{border:0;padding:0;gap:.85rem}.prompt-reader{margin-top:1.7rem}pre{padding:.8rem}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#copyButton">全文コピーボタンへ</a>
+<div class="page-shell">
+<header class="site-header"><span class="wordmark"><span class="brand-mark" aria-hidden="true">/</span> PROMPT COLLECTION</span></header>
+<main>
+<section class="intro" aria-labelledby="pageTitle"><h1 id="pageTitle">迷宮のボス創造</h1></section>
+<section class="copy-panel" aria-label="プロンプトをコピー">
+<div class="copy-meta"><span>プロンプト全文</span><span>5,400文字・省略なし</span></div>
+<button id="copyButton" class="copy-button" type="button" disabled aria-describedby="copyStatus"><svg class="copy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3"/></svg><span id="copyLabel">プロンプト全文をコピー</span></button>
+<p id="copyStatus" class="copy-status" role="status" aria-live="polite" aria-atomic="true">説明文を含めず、プロンプトだけをコピーします。</p>
+<div id="manualCopy" class="manual-copy" hidden><label for="manualText">手動コピー用の全文</label><p>「全文を選択」を押し、長押しメニューの「コピー」を選んでください。PCはCtrl+C（Macは⌘C）でコピーできます。アプリ内でうまくいかない場合は、SafariやChromeでこのページを開いてください。</p><textarea id="manualText" readonly spellcheck="false"></textarea><button id="selectButton" class="select-button" type="button">全文を選択</button></div>
+<noscript><p class="noscript">JavaScriptが無効です。下の「全文を確認する」を開き、本文を選択してコピーしてください。</p></noscript>
+</section>
+<section class="how-to" aria-labelledby="howToTitle"><h2 id="howToTitle">使い方</h2><ol class="steps"><li><span class="step-number" aria-hidden="true">01</span><span>プロンプトをコピー</span></li><li><span class="step-number" aria-hidden="true">02</span><span>使いたいAIを開く</span></li><li><span class="step-number" aria-hidden="true">03</span><span>プロンプトを貼り付けて送信</span></li></ol></section>
+<details class="prompt-reader"><summary><span>全文を確認する</span><span class="expand-mark" aria-hidden="true">＋</span></summary><pre id="promptText"><span>PERSONAL DUNGEON BOSS
+
+もし、あなたが「迷宮のボス」だったら？
+
+あなたは、
+
+・人物分析
+・行動パターン分析
+・ゲームデザイン
+・ダンジョン設計
+・ボスバトル設計
+・レベルデザイン
+・キャラクターデザイン
+・クリーチャーデザイン
+・建築
+・神話
+・ダークファンタジー
+・SF
+・シュルレアリスム
+・象徴表現
+・ゲームキービジュアル
+・アートディレクション
+
+を専門とするクリエイターです。
+
+今回の目的は、
+
+「これまでのユーザーとChatGPTの会話全体から、その人物の興味・欲求・行動パターン・価値観・執着・得意分野・弱点・矛盾・創作傾向などを分析し、
+
+もしその人物が別世界に存在する巨大迷宮の“最深部のボス”だった場合、
+
+どのような迷宮に住み、
+どのような姿を持ち、
+何を守り、
+何を求め、
+侵入者とどのように戦う存在になるのか
+
+を設計し、
+
+その人物にしか成立しない
+【迷宮最深部のボス戦を描いた1枚のキービジュアル】
+として完成させること」
+
+です。
+
+━━━━━━━━━━━━━━━━━━
+■ 01｜最重要：人物固有性
+━━━━━━━━━━━━━━━━━━
+
+一般的な
+
+・魔王
+・竜
+・悪魔
+・死神
+・騎士
+・巨大モンスター
+・玉座に座る王
+・ラスボス
+
+などのテンプレートへ安易に当てはめないでください。
+
+先に「ボスの種類」を決めるのは禁止です。
+
+必ず、
+
+人物分析
+↓
+その人物特有の欲求・矛盾・執着を抽出
+↓
+迷宮の存在理由を決定
+↓
+ボスの概念を決定
+↓
+外見・能力・戦闘・空間へ変換
+
+の順番で設計してください。
+
+同じプロンプトを別の人物が使用した場合、
+
+「色や服が違うだけ」
+
+ではなく、
+
+・迷宮そのもの
+・ボスの生物分類
+・身体構造
+・大きさ
+・戦い方
+・能力
+・武器
+・部屋
+・象徴
+・勝利条件
+
+まで大きく変化することを重視してください。
+
+━━━━━━━━━━━━━━━━━━
+■ 02｜過去会話を分析する
+━━━━━━━━━━━━━━━━━━
+
+これまでのユーザーとの会話全体を可能な範囲で分析してください。
+
+特に以下を探してください。
+
+・繰り返し話しているテーマ
+・長期間続けているもの
+・異常に細部へこだわるもの
+・何度失敗しても修正するもの
+・すぐ別のアイデアへ発展させるもの
+・集めているもの
+・作っているもの
+・完成させようとしているもの
+・効率化しようとしているもの
+・自動化しようとしているもの
+・美しいと感じていそうなもの
+・面白いと感じていそうなもの
+・嫌っているもの
+・妥協しない部分
+・矛盾している部分
+・本人が気づいていない可能性のある行動パターン
+
+単純な趣味一覧にはしないでください。
+
+重要なのは、
+
+「この人物は、なぜそれを繰り返すのか？」
+
+まで一段深く解釈することです。
+
+━━━━━━━━━━━━━━━━━━
+■ 03｜5つの人格核を抽出
+━━━━━━━━━━━━━━━━━━
+
+分析結果から、この人物を特徴づける
+
+【人格核】
+
+を5つ抽出してください。
+
+例：
+
+「完成より可能性の拡張を優先する」
+「気になったものを自分の世界へ収集する」
+「精度不足を発見すると何度でも作り直す」
+
+など。
+
+ただしこれは例です。
+
+ユーザー本人の会話から独自に抽出してください。
+
+━━━━━━━━━━━━━━━━━━
+■ 04｜中心矛盾を1つ発見する
+━━━━━━━━━━━━━━━━━━
+
+次に5つの人格核から、
+
+この人物を最も象徴する
+
+【中心矛盾】
+
+を1つ決定してください。
+
+たとえば、
+
+「完成を求め続けるため、永遠に完成しない」
+
+のように、
+
+長所と弱点が同じ根から生まれている構造を探してください。
+
+この中心矛盾を、
+
+今回の迷宮とボスの設計における最重要テーマとしてください。
+
+━━━━━━━━━━━━━━━━━━
+■ 05｜迷宮を設計する
+━━━━━━━━━━━━━━━━━━
+
+この人物がボスとして存在するなら、
+
+「なぜこの迷宮が存在するのか？」
+
+から考えてください。
+
+迷宮は単なる城や洞窟ではありません。
+
+ボスの精神構造・欲求・記憶・執着が、
+
+巨大な建築空間として物質化したものです。
+
+決定するもの：
+
+・迷宮名
+・存在理由
+・入口
+・基本構造
+・階層構造
+・建築様式
+・空間法則
+・罠
+・敵
+・異常現象
+・最深部
+・ボス部屋
+
+現実の建築物だけに限定しません。
+
+都市、宇宙、海底、生物内部、巨大機械、ネットワーク、夢、記憶、無限階段、廃墟、神殿など、
+
+人物分析から最適な構造を自由に発明してください。
+
+━━━━━━━━━━━━━━━━━━
+■ 06｜ボスの存在理由
+━━━━━━━━━━━━━━━━━━
+
+次に、
+
+「このボスは何を守っているのか？」
+
+を決定してください。
+
+宝物とは限りません。
+
+たとえば、
+
+記憶
+可能性
+作品
+知識
+失敗
+未来
+誰か
+世界
+秘密
+完成しなかった何か
+
+などもあり得ます。
+
+さらに、
+
+「侵入者をなぜ排除するのか」
+
+も設定してください。
+
+単純な悪役にはしないでください。
+
+━━━━━━━━━━━━━━━━━━
+■ 07｜生物分類から自由に設計
+━━━━━━━━━━━━━━━━━━
+
+ボスを必ず人型にしないでください。
+
+人物分析に最適なら、
+
+・人間型
+・獣型
+・神獣型
+・昆虫型
+・植物型
+・機械生命
+・人工知能
+・巨大建築生命
+・群体生命
+・液体生命
+・天体生命
+・概念生命
+・空間そのもの
+・迷宮そのもの
+
+など、
+
+どのような存在でも構いません。
+
+むしろ人型以外の方が人物を正確に表現できるなら、
+積極的に採用してください。
+
+━━━━━━━━━━━━━━━━━━
+■ 08｜身体構造を意味から設計
+━━━━━━━━━━━━━━━━━━
+
+身体の各要素には理由を持たせてください。
+
+例えば、
+
+「腕が6本あるから強そう」
+
+ではなく、
+
+「複数の物事を同時進行する性質が、6本の腕として物質化した」
+
+のように、
+
+人格
+↓
+意味
+↓
+身体構造
+
+の順番で決めます。
+
+設計するもの：
+
+・シルエット
+・身長 / 全長
+・身体構造
+・顔
+・目
+・腕
+・脚
+・翼
+・角
+・尾
+・皮膚 / 装甲 / 衣装
+・発光部位
+・周囲を漂う物体
+
+不要な項目は無理に追加しないでください。
+
+━━━━━━━━━━━━━━━━━━
+■ 09｜武器
+━━━━━━━━━━━━━━━━━━
+
+剣・槍・斧・杖などの一般武器を安易に選ばないでください。
+
+人物分析から、
+
+その人物だけの
+
+【特殊武器】
+
+を1つ設計してください。
+
+武器は物体である必要すらありません。
+
+空間、時間、記憶、光、音、情報、建築、重力、影、複製などを武器化しても構いません。
+
+━━━━━━━━━━━━━━━━━━
+■ 10｜ボス能力
+━━━━━━━━━━━━━━━━━━
+
+人物分析から、
+
+通常能力3つ
+特殊能力2つ
+究極能力1つ
+
+を設計してください。
+
+すべて、
+
+「なぜこの人物からこの能力が生まれたのか」
+
+説明できるものにしてください。
+
+━━━━━━━━━━━━━━━━━━
+■ 11｜ボス戦フェーズ
+━━━━━━━━━━━━━━━━━━
+
+戦闘は最低3フェーズ構成にしてください。
+
+PHASE 1
+表面的な人格。
+
+PHASE 2
+隠された欲求・執着が露出する。
+
+FINAL PHASE
+中心矛盾そのものがボスとして現れる。
+
+最終形態では、
+
+単純に巨大化するだけではなく、
+
+身体構造
+迷宮
+戦闘ルール
+空間
+
+のどれかが根本的に変化してください。
+
+━━━━━━━━━━━━━━━━━━
+■ 12｜弱点
+━━━━━━━━━━━━━━━━━━
+
+このボスには、
+
+人物分析から生まれた
+
+【概念的弱点】
+
+を1つ設定してください。
+
+単純な属性弱点は禁止です。
+
+炎に弱い、水に弱い、光に弱い、
+などにはしません。
+
+長所と弱点が表裏一体になる設計を優先してください。
+
+━━━━━━━━━━━━━━━━━━
+■ 13｜特殊勝利条件
+━━━━━━━━━━━━━━━━━━
+
+HPを0にするだけでは倒せないボスにしてください。
+
+この人物の中心矛盾に対応した、
+
+【特殊勝利条件】
+
+を設定してください。
+
+プレイヤーが
+
+「この人物を理解したからこそ攻略できた」
+
+と思える構造にしてください。
+
+━━━━━━━━━━━━━━━━━━
+■ 14｜象徴物
+━━━━━━━━━━━━━━━━━━
+
+過去会話から、
+
+その人物を象徴するモチーフを3〜7個抽出してください。
+
+ただし、そのまま置くだけは禁止です。
+
+必ず、
+
+現実のモチーフ
+↓
+迷宮世界での再解釈
+
+を行ってください。
+
+たとえば現実世界で「カメラ」が重要なら、
+
+単にカメラを置くのではなく、
+
+「可能性のある未来を撮影して固定する巨大な眼」
+
+のように変換します。
+
+━━━━━━━━━━━━━━━━━━
+■ 15｜テンプレート回避
+━━━━━━━━━━━━━━━━━━
+
+完成案を一度内部で確認してください。
+
+次の質問を行います。
+
+「この設定からユーザー固有の要素を消しても成立してしまわないか？」
+
+YESなら設計をやり直してください。
+
+さらに、
+
+「別の人へ名前だけ変えても成立しないか？」
+
+YESなら設計をやり直してください。
+
+最低3つ以上、
+
+「この人物の会話履歴がなければ生まれなかった要素」
+
+を含めてください。
+
+━━━━━━━━━━━━━━━━━━
+■ 16｜画像にする瞬間
+━━━━━━━━━━━━━━━━━━
+
+最終イラストは、
+
+【冒険者が最深部へ到達し、ボスが完全に姿を現した瞬間】
+
+を描いてください。
+
+設定資料風ではなく、
+
+ゲーム本編のラスボス戦を切り取ったような
+1枚の完成されたキービジュアルにします。
+
+ボスの全身または巨大な全容が理解できる構図。
+
+背景には最深部のボス部屋。
+
+ボス固有の能力が発動し始めている。
+
+迷宮とボスが同じテーマから生まれたことが一目で分かるようにしてください。
+
+スケール感を非常に重視します。
+
+人物サイズなら空間演出で威圧感を出し、
+巨大存在なら比較対象となる冒険者や建築物を小さく配置してください。
+
+━━━━━━━━━━━━━━━━━━
+■ 17｜ビジュアル品質
+━━━━━━━━━━━━━━━━━━
+
+最高品質のゲームキービジュアル。
+
+cinematic composition
+epic scale
+dark fantasy
+surreal fantasy
+science fantasy
+environmental storytelling
+volumetric lighting
+dramatic shadows
+intricate details
+concept art
+AAA game boss design
+high-end game key visual
+
+ただし、
+
+既存作品・既存キャラクターのコピーにはしないでください。
+
+人物分析から生まれた完全オリジナルデザインにしてください。
+
+━━━━━━━━━━━━━━━━━━
+■ 18｜文字
+━━━━━━━━━━━━━━━━━━
+
+画像内の文字は最小限。
+
+入れる場合は、
+
+・迷宮名
+・ボス名
+
+程度にしてください。
+
+説明文を大量に画像へ入れないでください。
+
+━━━━━━━━━━━━━━━━━━
+■ 19｜実行手順
+━━━━━━━━━━━━━━━━━━
+
+以下の順番で実行してください。
+
+STEP 1
+過去会話を分析する。
+
+STEP 2
+人格核を5つ抽出する。
+
+STEP 3
+中心矛盾を決める。
+
+STEP 4
+迷宮を設計する。
+
+STEP 5
+ボスの存在理由を決める。
+
+STEP 6
+生物分類・身体構造を決める。
+
+STEP 7
+特殊武器・能力・弱点を設計する。
+
+STEP 8
+3段階以上のボス戦を設計する。
+
+STEP 9
+特殊勝利条件を決める。
+
+STEP 10
+人物固有性チェックを行う。
+
+STEP 11
+最終的なボス名と迷宮名を決める。
+
+STEP 12
+設定を統合して、最も象徴的な「ボス初登場の瞬間」の構図を決める。
+
+STEP 13
+その構図をもとに完成イラストを生成する。
+
+━━━━━━━━━━━━━━━━━━
+■ 最終目標
+━━━━━━━━━━━━━━━━━━
+
+目指すのは、
+
+「この人は魔王っぽいから魔王にする」
+
+という診断ではありません。
+
+その人物が持つ
+
+欲求
+執着
+矛盾
+創造性
+弱点
+行動パターン
+美意識
+
+そのすべてが積み重なった結果、
+
+【この迷宮に、このボスが存在する以外ありえない】
+
+と思える存在を作ることです。
+
+画像を見た本人が、
+
+「かっこいい」
+
+だけではなく、
+
+「なんでこんな姿になったのか分かる」
+「確かに自分がラスボスならこうなりそう」
+
+と思えることを最優先してください。</span></pre></details>
+</main>
+<footer>このページはプロンプトの配布用です。生成や回答は、お使いのAIで行ってください。</footer>
+</div>
+<script>async function copyPlainText(text) {
+    try {
+      if (globalThis.isSecureContext && navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+        await navigator.clipboard.writeText(text);
+        return true;
+      }
+    } catch (_) { /* Some local files and embedded browsers restrict this API. */ }
+    const previous = document.activeElement;
+    const field = document.createElement("textarea");
+    field.value = text;
+    field.readOnly = true;
+    field.setAttribute("aria-label","全文コピー用の一時欄");
+    field.style.cssText = "position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;font-size:16px";
+    document.body.appendChild(field);
+    let success = false;
+    try {
+      field.focus({preventScroll:true});
+      field.select();
+      field.setSelectionRange(0,field.value.length);
+      success = typeof document.execCommand === "function" && document.execCommand("copy") === true;
+    } catch (_) { success = false; }
+    finally { field.remove(); previous?.focus?.({preventScroll:true}); }
+    return success;
+  }
+(function distributionRuntime() {
+    const source = document.getElementById("promptText");
+    const button = document.getElementById("copyButton");
+    const label = document.getElementById("copyLabel");
+    const status = document.getElementById("copyStatus");
+    const manual = document.getElementById("manualCopy");
+    const field = document.getElementById("manualText");
+    const original = source.textContent;
+    const selectAll = () => {field.focus({preventScroll:true});field.select();field.setSelectionRange(0,field.value.length);};
+    button.disabled = false;
+    button.addEventListener("click",async () => {
+      if (button.disabled) return;
+      button.disabled = true;
+      button.dataset.copied = "false";
+      label.textContent = "コピー中…";
+      const success = await copyPlainText(original);
+      button.disabled = false;
+      if (success) {
+        label.textContent = "全文をコピーしました";
+        button.dataset.copied = "true";
+        status.dataset.state = "success";
+        status.textContent = "使いたいAIに貼り付けてください。";
+        manual.hidden = true;
+      } else {
+        label.textContent = "プロンプト全文をコピー";
+        status.dataset.state = "error";
+        status.textContent = "自動コピーが制限されています。下の欄からコピーしてください。";
+        field.value = original;
+        manual.hidden = false;
+        selectAll();
+      }
+    });
+    document.getElementById("selectButton").addEventListener("click",() => {
+      selectAll();
+      status.dataset.state = "error";
+      status.textContent = "全文を選択しました。長押しメニューの「コピー」、またはCtrl+C（Macは⌘C）でコピーしてください。";
+    });
+  })();</script>
+</body>
+</html>
